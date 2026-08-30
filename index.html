@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Fits | Premium Shoes & Clothing</title>
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top announcement banner -->
+    <div class="announcement-bar">
+        <span>Thrifted Store • COD and Online Payment Avaliable</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="#" class="logo">Prime<span>Fits</span> <small style="font-size: 0.45em; font-weight: 500; letter-spacing: 0.1em; color: green; opacity: 0.9;">PK</small></a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#about" class="nav-link">Our Story</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search collection...">
+                    <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                
+                <button class="cart-toggle" id="cart-toggle" aria-label="Open Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content container">
+                <span class="hero-subtitle">NEW ARRIVALS 2026</span>
+                <h1 class="hero-title">Premium Looks. Everyday.</h1>
+                <p class="hero-desc">Discover a Collection of Premium and Aesthetic Clothes, Belts, Bags and Shoes.</p>
+                <div class="hero-actions">
+                    <a href="#shop" class="btn btn-primary">Shop Collection</a>
+                    <a href="#about" class="btn btn-outline">Explore Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog Section -->
+        <section class="shop-section container" id="shop">
+            <div class="section-header">
+                <h2 class="section-title">The Prime Collection</h2>
+                <p class="section-subtitle">Exquisite design. Handcrafted details. Sustainable fabrics.</p>
+            </div>
+
+            <!-- Categories and Search -->
+            <div class="filter-controls">
+                <div class="category-filters" id="category-filters">
+                    <button class="filter-btn active" data-category="all">All Pieces</button>
+                    <button class="filter-btn" data-category="clothing">Clothing</button>
+                    <button class="filter-btn" data-category="shoes">Shoes</button>
+                    <button class="filter-btn" data-category="bags">Bags</button>
+                </div>
+                <div class="filter-sort">
+                    <select id="sort-select" class="sort-select" aria-label="Sort products">
+                        <option value="default">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+                <!-- Products dynamically injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Brand Benefits / Values -->
+        <section class="benefits container" id="collections">
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-dollar"></i></div>
+                <h3>Best Prices</h3>
+                <p>Affordable & Best Prices</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-gem"></i></div>
+                <h3>Premium Quality</h3>
+                <p>Quality-Checked Thrifted Items</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Express Delivery</h3>
+                <p>Avaliable in all of Pakistan, Delivered at your Doorstep.</p>
+            </div>
+        </section>
+
+        <!-- About Story Section -->
+        <section class="about-section" id="about">
+            <div class="about-container container">
+                <div class="about-content">
+                    <span class="section-tag">Prime Fits</span>
+                    <h2>Wear your Prime</h2>
+                    <p>Welcome to PrimeFits — a trusted online thrift store bringing you stylish, quality and affordable fashion. 🖤✨</p>
+                    <p>We offer a carefully selected collection of thrifted & pre-loved Clothes 👕 | Pants 👖 | Shirts 👔 | Shoes 👟 | Belts | Bags 🎒 at prices you’ll love.</p>
+                    <p>Every item is selected and quality-checked before being listed, so you can discover unique styles without spending too much. 🔥</p>
+                    <p>
+                        <ul>
+                            <li>🚚 Delivery All Over Pakistan</li>
+                            <li>💰 Cash on Delivery Available</li>
+                            <li>✨ Quality-Checked Thrifted Items</li>
+                            <li>💯 Affordable & Best Prices</li>
+                            <li>📦 Carefully Packed Orders</li>
+                        </ul>
+                    </p>
+                    <p>Discover. Style. Save. — PrimeFits 👑 - Wear your Prime</p>
+                    <div class="about-stats">
+                        <!-- <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Organic Cotton</span>
+                        </div> -->
+                        <div class="stat-item">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-label">WhatsApp Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image-glow"></div>
+                    <div class="about-image-inner">
+                        <!-- <i class="fa-solid fa-scissors brand-watermark-icon"></i> -->
+                        <img src="./assets/logo-bg (1).png" alt="" width="400px">
+                        <div class="brand-badge">EST. 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-col">
+                <a href="#" class="logo">Prime<span>Fits</span> <small style="font-size: 0.45em; font-weight: 500; letter-spacing: 0.1em; color: green; opacity: 0.9;">PK</small></a>
+                <p class="footer-desc">Premium garments designed for high utility, comfort, and luxury aesthetic.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <!-- <div class="footer-col">
+                <h4>Collections</h4>
+                <ul class="footer-links">
+                    <li><a href="#shop">Tops</a></li>
+                    <li><a href="#shop">Outerwear</a></li>
+                    <li><a href="#shop">Bottoms</a></li>
+                    <li><a href="#shop">Limited Releases</a></li>
+                </ul>
+            </div> -->
+
+            <!-- <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us (WhatsApp)</a></li>
+                </ul>
+            </div> -->
+
+            <!-- <div class="footer-col">
+                <h4>Join Aura Wear</h4>
+                <p>Subscribe for early access to limited edition drops.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Your email address" required aria-label="Email Address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div> -->
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Prime Fits. All rights reserved. Designed for Premium Comfort.</p>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER (Slides from Right) -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Shopping Bag (<span id="cart-header-count">0</span>)</h3>
+            <button class="cart-close" id="cart-close" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <!-- Cart Items List -->
+        <div class="cart-items" id="cart-items-container">
+            <!-- Dynamic Cart Items -->
+            <!-- If empty, shows empty cart state -->
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="cart-footer" id="cart-footer">
+            <div class="cart-totals">
+                <div class="cart-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">0.00 PKR</span>
+                </div>
+                <!-- <div class="cart-row">
+                    <span>Shipping</span>
+                    <span class="shipping-value" id="cart-shipping">Calculated at checkout</span>
+                </div> -->
+                <div class="cart-row total-row">
+                    <span>Estimated Total</span>
+                    <span id="cart-total">0.00 PKR</span>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkout-btn">
+                Proceed to Checkout <i class="fa-brands fa-whatsapp ml-2"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Drawer Overlay Backgroud -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- PRODUCT DETAIL MODAL (Quick View / Selection) -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close Product Details"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-grid" id="modal-product-details">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- DELIVERY DETAILS MODAL (Before WhatsApp Checkout) -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content checkout-modal-content">
+            <button class="modal-close" id="checkout-modal-close" aria-label="Close Checkout"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-header">
+                <h3>Delivery Information</h3>
+                <p>Please enter your details to compile your WhatsApp order. No payment is required online.</p>
+            </div>
+            <form class="checkout-form" id="checkout-form">
+                <div class="form-group">
+                    <label for="cust-name">Full Name *</label>
+                    <input type="text" id="cust-name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="cust-phone">WhatsApp Number (Optional)</label>
+                    <input type="tel" id="cust-phone" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                    <label for="cust-address">Delivery Address *</label>
+                    <textarea id="cust-address" rows="3" required placeholder="Street Address, City, Zip Code, Country"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cust-payment">Preferred Payment Method *</label>
+                        <select id="cust-payment" required>
+                            <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+                            <option value="Bank Transfer">Direct Bank Transfer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cust-notes">Special Instructions / Notes</label>
+                    <textarea id="cust-notes" rows="2" placeholder="Gate code, delivery times, size preferences..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Send Order via WhatsApp <i class="fa-brands fa-whatsapp ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
